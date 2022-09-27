@@ -400,7 +400,7 @@ $json_data = json_decode($json);
             <h2><?=$json_data->Footer3->Title ?></h2>
             <address class="margin-bottom-40">
               <p>We meet every <?=$json_data->MeetingData->meetingDay?> at <?=$json_data->MeetingData->meetingTime?> <?=$json_data->MeetingData->meetingTimeZone?></p>
-              Where? At <h4><?=$json_data->MeetingData->meetingPlaceName?></h4>
+              <h4><small>We meet at </small><?=$json_data->MeetingData->meetingPlaceName?></h4>
               <p><?=$json_data->MeetingData->meetingAddress ?> <a href="<?=$json_data->MeetingData->meetingAddressMap ?> target="_blank">(Open in maps)</a></p>
               <p>Email: <a href="mailto:<?=$json_data->MeetingData->meetingEmailContact?>"><?=$json_data->MeetingData->meetingEmailContact?></a></p>
               <!-- <i class="fa fa-headphones"></i><span> <a href="http://zoom.us/j/299324505?pwd=RVhRQXRrL1ZpV3hNNnBBVlp3aXF1QT09" target="_blank">Zoom online meeting</a></span><br><br> -->
