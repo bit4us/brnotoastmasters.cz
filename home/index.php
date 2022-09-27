@@ -57,54 +57,29 @@ $json_data = json_decode($json);
   <link href="../assets/pages/css/style.css" rel="stylesheet">
   <link href="../assets/pages/css/style-responsive.css" rel="stylesheet">
   <link href="assets/corporate/css/themes/dark-theme.css" rel="stylesheet" id="style-color">
-  <!-- <link href="../assets/pages/css/components.css" rel="stylesheet"> -->
-  <!-- <link href="../assets/pages/css/themes/light-theme.css" rel="stylesheet" id="theme-link"> -->
   <!-- Theme styles END -->
 
 </head>
 
 <!-- <body class="corporate" style="height: 100vh; margin:0; display: flex; flex-direction: column;"> -->
 <body class="corporate">
-  <div id="fb-root"></div>
-
-  <!-- Your Chat Plugin code -->
-  <!-- <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-  
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "193119594042991");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v12.0'
-      });
-    };
-  
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script> -->
-      <!-- BEGIN STYLE CUSTOMIZER -->
-      <div class="color-panel hidden-sm">
-        <div class="color-mode-icons icon-color"></div>
-        <div class="color-mode-icons icon-color-close"></div>
-          <div class="color-mode">
-            <p>THEME COLOR</p>
-            <ul class="inline">
-              <li class="color-white current color-default" data-style="light-theme"></li>
-              <li class="color-gray" data-style="dark-theme"></li>
-            </ul>
-          </div>
-        </div>
+  <?php 
+    // include_once "../includes/fb-chat-plugin.php";
+  ?>
+  <!-- BEGIN STYLE CUSTOMIZER -->
+  <div class="color-panel hidden-sm">
+    <div class="color-mode-icons icon-color"></div>
+    <div class="color-mode-icons icon-color-close"></div>
+      <div class="color-mode">
+        <p>THEME COLOR</p>
+        <ul class="inline">
+          <li class="color-white current color-default" data-style="light-theme"></li>
+          <li class="color-gray" data-style="dark-theme"></li>
+        </ul>
       </div>
-    <!--  END BEGIN STYLE CUSTOMIZER -->
+    </div>
+  </div>
+<!--  END BEGIN STYLE CUSTOMIZER -->
   <!-- BEGIN TOP BAR -->
   <div class="pre-header">
     <div class="container">
@@ -167,19 +142,6 @@ $json_data = json_decode($json);
       </div>
       <!-- END NAVIGATION -->
     </div>
-    <!-- BEGIN BLOCKQUOTE BLOCK -->
-    <!-- <div class="container">
-      <div class="row quote-v1 margin-top-5 margin-bottom-5" style="background-color: #6fc561;">
-        <div class="col-md-9">
-          <span style="color: #e45000;"><a href="./contests.html">ONLINE Spring AREA CONTEST C1+C2+C5 <i class="fa fa-calendar"></i> 26 March 2022</a></span>
-        </div>
-        <div class="col-md-3 text-right" style="padding: 12px 18px;">
-          <a class="btn-transparent" href="https://zoom.us/j/95424039963" target="_blank"><i class="fa fa-headphones margin-right-10"></i>Join on ZOOM Now!</a> <br>
-          Passcode: 361246
-        </div>
-      </div>
-    </div> -->
-    <!-- END BLOCKQUOTE BLOCK -->
   </div>
   <!-- Header END -->
   <!-- BEGIN SLIDER -->
@@ -430,30 +392,6 @@ $json_data = json_decode($json);
     <!-- END FOOTER -->
   </div>
 
-  <!-- <script>
-    const btn = document.querySelector(".btn-toggle");
-    const theme = document.querySelector("#theme-link");
-    const light_theme = "../assets/pages/css/themes/light-theme.css";
-    const dark_theme = "../assets/pages/css/themes/dark-theme.css";
-    const localStorageTheme = localStorage.getItem("theme")
-    if (localStorageTheme == null || localStorageTheme == '') {
-      theme.href = light_theme
-    }
-    else {
-      theme.href = localStorageTheme
-    }
-    btn.addEventListener("click", function (event) {
-      // Swap out the URL for the different stylesheets
-      if (theme.getAttribute("href") == light_theme) {
-        theme.href = dark_theme;
-        localStorage.setItem("theme", dark_theme)
-      } else {
-        theme.href = light_theme;
-        localStorage.setItem("theme", light_theme)
-      }
-      event.preventDefault();
-    });
-  </script> -->
   <!-- Load javascripts at bottom, this will reduce page load time -->
   <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
   <!--[if lt IE 9]>
