@@ -56,5 +56,26 @@
             "title": "Pathways",
             "content": "<div class='col-md-3 col-sm-3'><a href='https://www.youtube.com/embed/iv9cKPn0Wpo?autoplay=1&enablejsapi=1' class='fancybox-button fancybox.iframe' title='Pathways' data-rel='fancybox-button2'><img class='img-responsive' src='../assets/pages/img/tmi/pathwaysVideo.jpg' alt=''></a></div><div class='col-md-9 col-sm-9'><h4>What are pathways?</h4><p class='margin-bottom-10'>Toastmasters Pathways learning experience, an exciting, flexible and interactive way to develop your skills and help others in your club develop theirs. Pathways helps you learn communication and leadership skills that you need to succeed.</p><p><a class='more' href='https://www.toastmasters.org/pathways-overview' target='_blank'>Read more</a></p><h4>Have you joined us? Are you undecided what Pathway to choose?</h4><p>Toastmasters pathway selection seems to be complicated for some of us. However, don't get scared. There's a smart tool through which you can assess which pathway would fit you best. So you may choose based on your assessment or whatever you'd like. </p><p><a class='more' href='https://www.toastmasters.org/start-pathways/select-your-preference?' target='_blank' >Take assessment here</a></p></div>"
         }
+        ,{
+            "id":3,
+            "class": "",
+            "class2": "",
+            "title": "Education",
+            "content": "<p>Education is an important part of every Toastmaster's journey, and it is a critical aspect of all club meetings around the world. Participating in Toastmasters' education programs allows you to gain the valuable practice needed to develop your public speaking, communication, and leadership skills. The safe and supportive environment clubs provide allows you to learn at your own pace in a curriculum that has helped millions meet their personal and professional goals.</p><p><a class='more' href='https://www.toastmasters.org/education' target='_blank'>Learn more</a></p>"
+        }
+        ,{
+            "id":4,
+            "class": "",
+            "class2": "",
+            "title": "Membership",
+            "content": "<p>Joining Toastmasters is easy and affordable. When you become a member, you'll have the support of o8ur club, district and the global organization as you work toward your goals. By becoming a  member you're opening a door towards professional public speaking, towards successful leadership and towards a world of fascinating stories, great lessons and fantastic personal growth. </p><p><a class='more' href='https://www.toastmasters.org/membership/why-toastmasters' target='_blank'>Read more</a></p>"
+        }
+        ,{
+            "id":5,
+            "class": "",
+            "class2": "",
+            "title": "Contests",
+            "content": "<p>Speech contests are a Toastmasters tradition. Each year, thousands of Toastmasters compete in the Humorous, Evaluation, Tall Tales, Table Topics and International speech contests. Competition begins with club contests, and winners continue competing through the Area, Division and District levels. Winners of the District level International Speech Contest proceed to the region quarterfinal level. Following region quarterfinals, winners advance to the semifinals for a chance to take part in the World Championship of Public Speaking®.</p><p><a class='more' href='https://www.toastmasters.org/leadership-central/speech-contests' target='_blank'>Read more</a></p>"
+        }
     ]
 }
