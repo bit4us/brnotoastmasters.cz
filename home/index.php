@@ -13,6 +13,8 @@
 $pagename = "home";
 $json = file_get_contents('../data/common.json');
 $json_data = json_decode($json);
+$homeJSON = file_get_contents('../data/home.json');
+$home_data = json_decode($homeJSON);
 
 ?>
 
@@ -175,24 +177,16 @@ $json_data = json_decode($json);
     <div class="container">
       <!-- BEGIN STEPS -->
       <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3">
-        <div class="col-md-4 col-sm-4 front-step-col">
-          <div class="front-step front-step1">
-            <h2>Be our guest</h2>
-            <p>Guests are always welcome. They are able to participate in our meetings as Table Topics speakers and a few roles of their choosing.</p>
+        <?php foreach ($home_data->steps as $step) { ?>
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step<?=$step->stepNo?>">
+              <h2><?=$step->title?></h2>
+              <p><?=$step->content?></p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-4 front-step-col">
-          <div class="front-step front-step2">
-            <h2>Have an Ice Breaker</h2>
-            <p>As a guest we encourage you to register and prepare your first Ice Breaker. It is the best way to introduce yourself to the club and feel the stage under your feet.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 front-step-col">
-          <div class="front-step front-step3">
-            <h2>Be one of us</h2>
-            <p>Become a member. Choose a pathway and participate actively to becoming a great public speaker and a great leader within our club.</p>
-          </div>
-        </div>
+        <?php } ?>
+      
+        
       </div>
       <!-- END STEPS -->
       <!-- BEGIN SERVICE BOX -->   
