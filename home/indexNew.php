@@ -13,7 +13,6 @@
 $json = file_get_contents('../data/common.json');
 $json_data = json_decode($json);
 
-$meetingData = $json_data->MeetingData;
 ?>
 
 
@@ -207,7 +206,7 @@ $meetingData = $json_data->MeetingData;
                 <span class="carousel-title-normal">of your own voice</span>
               </h2>
               <p class="carousel-subtitle-v5 border-top-bottom margin-top-30 margin-bottom-30" data-animation="animated fadeInDown">
-                When: Every <?=$meetingData->meetingDay ?>, <?=$json_data->MeetingData->meetingTime?> <br>Where: <a href="<?=$json_data->MeetingData->MeetingAddressMap?>" target="_blank" rel="noopener noreferrer" style="color: #1B8093; font-weight: bold;"><i class="fa fa-globe"></i> <?=$json_data->MeetingData->MeetingPlaceName?></a></p>
+                When: Every <?=$json_data->MeetingData->meetingDay ?>, <?=$json_data->MeetingData->meetingTime?> <br>Where: <a href="<?=$json_data->MeetingData->meetingAddressMap?>" target="_blank" rel="noopener noreferrer" style="color: #1B8093; font-weight: bold;"><i class="fa fa-globe"></i> <?=$json_data->MeetingData->meetingPlaceName?></a></p>
               <a class="carousel-btn-green" data-animation="animated fadeInUp"
                 href="https://bt.tmclub.eu/profile.php?mode=register&YerThere=true" target="_blank">Join Now!</a>
                 <br><br><br>
@@ -404,7 +403,7 @@ $meetingData = $json_data->MeetingData;
             <address class="margin-bottom-40">
               <b><?=$json_data->MeetingData->meetingPlaceName?></b><br>
               <?=$json_data->MeetingData->meetingAddress ?> <a href="<?=$json_data->MeetingData->meetingAddressMap ?> target="_blank">(Open in maps)</a><br/>
-              We meet every <?=$json_data->MeetingData->meetingDay?> at <?=$json_data->MeetingData->meetingTime?> <?=$json_data->MeetingData->meetingTime?> <br>
+              We meet every <?=$json_data->MeetingData->meetingDay?> at <?=$json_data->MeetingData->meetingTime?> <?=$json_data->MeetingData->meetingTimeZone?> <br>
               Email: <a href="mailto:<?=$json_data->MeetingData->meetingEmailContact?>"><?=$json_data->MeetingData->meetingEmailContact?></a><br>
               <!-- <i class="fa fa-headphones"></i><span> <a href="http://zoom.us/j/299324505?pwd=RVhRQXRrL1ZpV3hNNnBBVlp3aXF1QT09" target="_blank">Zoom online meeting</a></span><br><br> -->
               <a href="<?=$json_data->MeetingData->meetingFacebookPageLink?>" target="_blank"><h4><i class="<?=$json_data->MeetingData->meetingFacebookPageIcon?>"></i> <?=$json_data->MeetingData->meetingFacebookPageTitle?></h4></a> 
