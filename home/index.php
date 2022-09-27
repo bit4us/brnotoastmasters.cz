@@ -187,6 +187,16 @@ $home_data = json_decode($homeJSON);
         <?php } ?>
       </div>
       <!-- END STEPS -->
+      <!-- BEGIN BLOCKQUOTE BLOCK -->   
+      <div class="row quote-v1 margin-bottom-30">
+        <div class="col-md-9">
+          <span><?=$home_data->blockquote1->title?></span>
+        </div>
+        <div class="col-md-3 text-right">
+          <a class="btn-transparent" href="<?=$home_data->blockquote1->href?>" target="<?=$home_data->blockquote1->target?>"><i class="<?=$home_data->blockquote1->link_class?> margin-right-10"></i><?=$home_data->blockquote1->link_title?></a>
+        </div>
+      </div>
+      <!-- END BLOCKQUOTE BLOCK -->
       <!-- BEGIN SERVICE BOX -->   
       <div class="row service-box margin-bottom-40">
       <?php foreach ($home_data->services as $service) { ?>

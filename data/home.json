@@ -33,4 +33,12 @@
             "content": "With Brno Toastmasters you can become a part of a group of people that are thriving in international contests and connect even further than the club itself"
         }
     ]
+    ,"blockquote1": 
+    {
+        "title":"Brno Toastmasters - part of Toastmasters International organization",
+        "href":"http://toastmasters.org",
+        "target":"_blank",
+        "link_class": "fa fa-globe",
+        "link_title":"Toastmasters.org"
+    }
 }
