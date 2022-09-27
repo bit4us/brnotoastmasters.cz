@@ -51,12 +51,6 @@
             "icon":""
         }
         ,{
-            "//name":"contests",
-            "//title":"Contests",
-            "//href":"../contests",
-            "//icon":""
-        }
-        ,{
             "name":"club",
             "title":"Our Club",
             "href":"../club",
