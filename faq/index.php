@@ -418,12 +418,12 @@ $json_data = json_decode($json);
                                      <div class="col-md-6">
                                         <h3>New Membership</h3>
                                         (you have to type the amount after discussing with our officers) <br>
-                                        <img src="./assets/pages/img/faq/newqrcode.png" alt="New Membership QR Code">
+                                        <img src="../assets/pages/img/faq/newqrcode.png" alt="New Membership QR Code">
                                      </div>
                                      <div class="col-md-6" style="text-align: right;">
                                         <h3>Renewal Membership</h3>
                                         (amount for renewal is already predefined) <br>
-                                        <img src="./assets/pages/img/faq/renewalqrcode.png" alt="New Membership QR Code">
+                                        <img src="../assets/pages/img/faq/renewalqrcode.png" alt="Renewal Membership QR Code">
                                      </div>
                                   </div>
                                 </div>

@@ -51,12 +51,6 @@
             "icon":""
         }
         ,{
-            "name":"club",
-            "title":"Our Club",
-            "href":"../club",
-            "icon":""
-        }
-        ,{
             "name":"faq",
             "title":"FAQ",
             "href":"../faq",
