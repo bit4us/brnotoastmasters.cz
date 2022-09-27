@@ -108,12 +108,6 @@ $json_data = json_decode($json);
   <div class="pre-header">
     <div class="container">
       <div class="row">
-        <!-- <div class="col-md-6 col-sm-6 additional-shop-info">
-          <ul class="list-unstyled list-inline">
-              <li><a href="https://www.facebook.com/romaniinbrno" target="_blank"><i class="fa fa-facebook"></i>Pagină Români în Brno</a> </li>
-              <li><a href="https://www.facebook.com/groups/380069925403900" target="_blank"><i class="fa fa-facebook-square"></i> Grup Români în Brno</a></li>
-          </ul>
-        </div> -->
         <!-- BEGIN TOP BAR LEFT PART -->
         <div class="col-md-6 additional-shop-info">
           <ul class="list-unstyled list-inline">
@@ -129,7 +123,7 @@ $json_data = json_decode($json);
             ?>
             <!--
             <li>
-              <span><a href="https://tmtimer.calebgrove.com/" target="_blank">Timer</a></span>
+              <span><a href="" target="_blank">Timer</a></span>
             </li> -->
           </ul>
         </div>

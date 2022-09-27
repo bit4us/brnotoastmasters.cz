@@ -16,10 +16,14 @@
         {
             "Link":"https://www.facebook.com/BrnoToastmasters",
             "class":"fa fa-facebook"
-        },
-        {
+        }
+        ,{
             "Link":"https://www.youtube.com/playlist?list=PL8GXW336tFStYMbwhEd4MUoO8ZXq7wOy2",
             "class":"fa fa-youtube"
+        }
+        ,{
+            "Link":"https://tmtimer.calebgrove.com/",
+            "class":"fa fa-clock"
         }
     ],
     "RightTopLinks":[
@@ -29,6 +33,8 @@
             "title":"easySpeak"
         }
     ],
+    
+
     "Footer1":
         {
             "Title":"About us",
