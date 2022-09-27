@@ -2,7 +2,7 @@
 $to = 'bit4us@gmail.com';
 $name = "Marius";
 
-$subject = 'Mail sent from sendmail PHP script';
+$subject = 'Subscription renewal reminder';
 
 $from = 'no-reply-treasurer@brnotoastmasters.com';
 $headers = "From: $from \r\n";
