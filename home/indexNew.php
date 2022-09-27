@@ -141,7 +141,7 @@ $json_data = json_decode($json);
               foreach ($json_data->RightTopLinks as $rtLink) {
             ?>
               <li>
-                <a href="<?=rtLink->link?>" target="_blank"><i class="<?=rtLink->class?>"></i> <?=rtLink->title ?></a>
+                <a href="<?=$rtLink->link?>" target="_blank"><i class="<?=$rtLink->class?>"></i> <?=$rtLink->title ?></a>
               </li>
             <?php
               }
