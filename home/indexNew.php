@@ -399,7 +399,7 @@ $json_data = json_decode($json);
           <div class="col-md-4 col-sm-6 pre-footer-col padding-top-10">
             <h2><?=$json_data->Footer3->Title ?></h2>
             <address class="margin-bottom-40">
-              <b><?=$json_data->MeetingData->meetingPlaceName?></b><br>
+              <h3><?=$json_data->MeetingData->meetingPlaceName?></h3>
               <?=$json_data->MeetingData->meetingAddress ?> <a href="<?=$json_data->MeetingData->meetingAddressMap ?> target="_blank">(Open in maps)</a><br/>
               We meet every <?=$json_data->MeetingData->meetingDay?> at <?=$json_data->MeetingData->meetingTime?> <?=$json_data->MeetingData->meetingTimeZone?> <br>
               Email: <a href="mailto:<?=$json_data->MeetingData->meetingEmailContact?>"><?=$json_data->MeetingData->meetingEmailContact?></a><br>
