@@ -32,6 +32,11 @@
     "Footer1":
         {
             "Title":"About us",
-            "Content": "Brno Toastmasters was established in 2008 by a group of enthusiasts with a passion for communication and personal growth. Since the beginning, the club's meetings offered a supportive atmosphere and valuable feedback to people who wanted to overcome the fear of speaking in public or looked to embark on a new leadership challenge. <br/>Our mission is to develop the new leaders of tomorrow"
-        }    
+            "Content": "<p>Brno Toastmasters was established in 2008 by a group of enthusiasts with a passion for communication and personal growth. Since the beginning, the club's meetings offered a supportive atmosphere and valuable feedback to people who wanted to overcome the fear of speaking in public or looked to embark on a new leadership challenge.</p><p>Our mission is to develop the new leaders of tomorrow.</p>"
+        },
+    "Footer2":
+    {
+        "Title": "Register with our Club",
+        "Content": "<p>If you'd like to receive emails regarding our meetings and participate, please feel free to <a href='https://bt.tmclub.eu/profile.php?mode=register&YerThere=true' target='_blank'>register here</a></p><p>For any questions or more information, please feel free to contact us via the chat available on the side or via email.</p>"
+    }
 }
