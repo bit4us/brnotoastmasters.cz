@@ -226,7 +226,6 @@ $home_data = json_decode($homeJSON);
             <?php } ?>
           </div>
         </div>
-        <!-- END TABS -->
       </div>                
       <!-- END TABS -->
       <div class="row margin-bottom-40">

@@ -77,5 +77,12 @@
             "title": "Contests",
             "content": "<p>Speech contests are a Toastmasters tradition. Each year, thousands of Toastmasters compete in the Humorous, Evaluation, Tall Tales, Table Topics and International speech contests. Competition begins with club contests, and winners continue competing through the Area, Division and District levels. Winners of the District level International Speech Contest proceed to the region quarterfinal level. Following region quarterfinals, winners advance to the semifinals for a chance to take part in the World Championship of Public Speaking®.</p><p><a class='more' href='https://www.toastmasters.org/leadership-central/speech-contests' target='_blank'>Read more</a></p>"
         }
+        ,{
+            "id":6,
+            "class": "",
+            "class2": "",
+            "title": "Club Meeting Roles",
+            "content": "<p>The success of a club meeting depends on the participants. At each meeting, there are many roles to fill and they play an important part in making the club experience enjoyable.</p><p><a class='more' href='https://www.toastmasters.org/membership/club-meeting-roles' target='_blank'>Read more</a></p>"
+        }
     ]
 }
