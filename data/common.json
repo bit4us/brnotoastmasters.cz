@@ -12,10 +12,11 @@
             "meetingFacebookPageIcon": "fa fa-facebook",
             "meetingFacebookPageTitle": "BrnoToastmasters"
         },
-    "Logo":{
-        "small":"Public Speaking Club",
-        "title":"BRNO TOASTMASTERS",
-    },
+    "Logo":
+        {
+            "small":"Public Speaking Club",
+            "title":"BRNO TOASTMASTERS"
+        },
     "LeftTopLinks":[
         {
             "Link":"https://www.facebook.com/BrnoToastmasters",
