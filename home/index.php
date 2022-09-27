@@ -185,33 +185,19 @@ $home_data = json_decode($homeJSON);
             </div>
           </div>
         <?php } ?>
-      
-        
       </div>
       <!-- END STEPS -->
       <!-- BEGIN SERVICE BOX -->   
       <div class="row service-box margin-bottom-40">
+      <?php foreach ($home_data->services as $service) { ?>
         <div class="col-md-4 col-sm-4">
           <div class="service-box-heading">
-            <em><i class="fa fa-location-arrow blue"></i></em>
-            <span>Improve public speaking skills</span>
+            <em><i class="<?=$service->class?>"></i></em>
+            <span><?=$service->title?></span>
           </div>
-          <p>Being afraid of public speaking is a common thing for many people. Brno Toastmasters is the perfect environment to learn to overcome this fear and become a great public speaker</p>
+          <p><?=$service->content?></p>
         </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="service-box-heading">
-            <em><i class="fa fa-check red"></i></em>
-            <span>Learn through feedback</span>
-          </div>
-          <p>Every speech can be improved only by receiving honest and correct feedback. And even feedback is, at the end of the day, still public speaking</p>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="service-box-heading">
-            <em><i class="fa fa-compress green"></i></em>
-            <span>Build your network</span>
-          </div>
-          <p>With Brno Toastmasters you can become a part of a group of people that are thriving in international contests and connect even further than the club itself</p>
-        </div>
+        <?php } ?>
       </div>
       <!-- END SERVICE BOX -->
       <!-- BEGIN BLOCKQUOTE BLOCK -->   

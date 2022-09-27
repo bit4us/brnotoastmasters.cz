@@ -16,4 +16,21 @@
             "content":"Become a member. Choose a pathway and participate actively to becoming a great public speaker and a great leader within our club."
         }
     ]
+    ,"services": [
+        {
+            "class": "fa fa-location-arrow blue",
+            "title":"Improve public speaking skills",
+            "content": "Being afraid of public speaking is a common thing for many people. Brno Toastmasters is the perfect environment to learn to overcome this fear and become a great public speaker"
+        }
+        ,{
+            "class": "fa fa-check red",
+            "title":"Learn through feedback",
+            "content": "Every speech can be improved only by receiving honest and correct feedback. And even feedback is, at the end of the day, still public speaking"
+        }
+        ,{
+            "class": "fa fa-compress green",
+            "title":"Build your network",
+            "content": "With Brno Toastmasters you can become a part of a group of people that are thriving in international contests and connect even further than the club itself"
+        }
+    ]
 }
