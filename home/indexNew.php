@@ -121,10 +121,6 @@ $json_data = json_decode($json);
             <?php
               }
             ?>
-            <!--
-            <li>
-              <span><a href="" target="_blank">Timer</a></span>
-            </li> -->
           </ul>
         </div>
         <!-- END TOP BAR LEFT PART -->
@@ -140,8 +136,6 @@ $json_data = json_decode($json);
             <?php
               }
             ?>
-            <!-- <li><a href="https://ib.fio.cz/ib/transparent?a=2600101541&l=ENGLISH" target="_blank"
-                class="hidden">FioBanka</a></li> -->
           </ul>
         </div>
         <!-- END TOP BAR MENU -->
@@ -154,8 +148,8 @@ $json_data = json_decode($json);
   <div class="header">
     <div class="container">
       <a class="site-logo" href="../home">
-        <small>Public Speaking Club</small><br/>
-        BRNO TOASTMASTERS
+        <p><small><?=$json_data->Logo->small ?></small></p>
+        <p><?=$json_data->Logo->title ?></p>
       </a>
       <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 

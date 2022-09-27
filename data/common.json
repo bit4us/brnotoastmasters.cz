@@ -12,6 +12,9 @@
             "meetingFacebookPageIcon": "fa fa-facebook",
             "meetingFacebookPageTitle": "BrnoToastmasters"
         },
+    "Logo":{
+        "small":"Public Speaking Club",
+        "title":"BRNO TOASTMASTERS",
     "LeftTopLinks":[
         {
             "Link":"https://www.facebook.com/BrnoToastmasters",
@@ -31,6 +34,11 @@
             "link":"https://bt.tmclub.eu/",
             "class":"fa fa-comments",
             "title":"easySpeak"
+        }
+        ,{
+            "link":"https://ib.fio.cz/ib/transparent?a=2600101541&l=ENGLISH",
+            "class":"fa fa-clock",
+            "title":""
         }
     ],
     
