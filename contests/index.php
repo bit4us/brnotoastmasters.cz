@@ -10,7 +10,7 @@
 <head>
 
 <?php
-$pagename = "club";
+$pagename = "contests";
 $json = file_get_contents('../data/common.json');
 $json_data = json_decode($json);
 
