@@ -385,23 +385,19 @@ $json_data = json_decode($json);
           <div class="col-md-4 col-sm-6 pre-footer-col padding-top-10">
             <h2><?=$json_data->Footer1->Title ?></h2>
             <?=$json_data->Footer1->Content ?>
-            <!-- <p>Brno Toastmasters was established in 2008 by a group of enthusiasts with a passion for communication and personal growth. Since the beginning, the club's meetings offered a supportive atmosphere and valuable feedback to people who wanted to overcome the fear of speaking in public or looked to embark on a new leadership challenge.</p>
-            <p>Our mission is to develop the new leaders of tomorrow</p> -->
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
 
           <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
+          <div class="col-md-4 col-sm-6 pre-footer-col padding-top-10">
             <h2><?=$json_data->Footer2->Title ?></h2>
             <?=$json_data->Footer2->Content ?>
-            <!-- <p>If you'd like to receive emails regarding our meetings and participate, please feel free to <a href="https://bt.tmclub.eu/profile.php?mode=register&YerThere=true" target="_blank">register here</a></p>
-            <p>For any questions or more information, please feel free to contact us via the chat available on the side or via email.</p> -->
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
 
           <!-- BEGIN TWITTER BLOCK --> 
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Our Contacts</h2><br/>
+          <div class="col-md-4 col-sm-6 pre-footer-col padding-top-10">
+            <h2><?=$json_data->Footer3->Title ?></h2>
             <address class="margin-bottom-40">
               <b><?=$json_data->MeetingData->meetingPlaceName?></b><br>
               <?=$json_data->MeetingData->meetingAddress ?> <a href="<?=$json_data->MeetingData->meetingAddressMap ?> target="_blank">(Open in maps)</a><br/>
