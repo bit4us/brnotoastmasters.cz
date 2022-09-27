@@ -215,7 +215,7 @@ $home_data = json_decode($homeJSON);
         <div class="col-md-12 tab-style-1">
           <ul class="nav nav-tabs">
             <?php foreach($home_data->tabs1 as $tab) {?>
-              <li class="<?=$tab->class?>"><a href="#tab-<?=$tab->id?>" data-toggle="tab1" ><?=$tab->title?></a></li>
+              <li class="<?=$tab->class?>"><a href="#tab-<?=$tab->id?>" data-toggle="tab" ><?=$tab->title?></a></li>
             <?php } ?>
           </ul>
           <div class="tab-content">
