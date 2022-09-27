@@ -8,5 +8,13 @@
             "Link":"https://www.youtube.com/playlist?list=PL8GXW336tFStYMbwhEd4MUoO8ZXq7wOy2",
             "class":"fa fa-youtube"
         }
+    ],
+    "RightTopLinks":[
+        {
+            "link":"https://bt.tmclub.eu/",
+            "class":"fa fa-comments",
+            "title":"easySpeak"
+        }
     ]
+    
 }

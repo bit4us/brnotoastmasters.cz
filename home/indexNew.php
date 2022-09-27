@@ -8,6 +8,14 @@
 <!-- Head BEGIN -->
 
 <head>
+
+<?php
+$json = file_get_contents('../data/common.json');
+$json_data = json_decode($json);
+
+?>
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9N1S1VNPTH"></script>
   <script>
@@ -110,10 +118,6 @@
         <div class="col-md-6 additional-shop-info">
           <ul class="list-unstyled list-inline">
             <?php 
-              $json = file_get_contents('../data/common.json');
-              $json_data = json_decode($json);
-              // print_r($json_data);
-
               foreach($json_data->LeftTopLinks as $ltLink){
             ?>
               <li>
@@ -123,22 +127,7 @@
             <?php
               }
             ?>
-            <!-- <li>
-              <a href="https://www.facebook.com/BrnoToastmasters" target="_blank"><i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/playlist?list=PL8GXW336tFStYMbwhEd4MUoO8ZXq7wOy2" target="_blank"><i
-                  class="fa fa-youtube"></i></a>
-            </li> -->
-            <!-- <li><a href="https://tmclub.eu/" target="_blank"><i class="fa fa-comments"></i></a></li> -->
-            <!-- <li>
-              <i class="fa fa-headphones"></i>
-              <span>
-                <a href="http://zoom.us/j/299324505?pwd=RVhRQXRrL1ZpV3hNNnBBVlp3aXF1QT09" target="_blank">Zoom
-                  meeting</a>
-              </span>
-            </li>
+            <!--
             <li>
               <span><a href="https://tmtimer.calebgrove.com/" target="_blank">Timer</a></span>
             </li> -->
@@ -148,9 +137,18 @@
         <!-- BEGIN TOP BAR MENU -->
         <div class="col-md-6 col-sm-3 additional-nav">
           <ul class="list-unstyled list-inline pull-right">
+            <?php 
+              foreach ($json_data->RightTopLinks as $rtLink) {
+            ?>
+              <li>
+                <a href="<?=rtLink->link?>" target="_blank"><i class="<?=rtLink->class?>"></i> <?=rtLink->title ?></a>
+              </li>
+            <?php
+              }
+            ?>
             <!-- <li><a href="https://ib.fio.cz/ib/transparent?a=2600101541&l=ENGLISH" target="_blank"
                 class="hidden">FioBanka</a></li> -->
-            <li><a href="https://tmclub.eu/" target="_blank"><i class="fa fa-comments"></i> easySPEAK</a></li>
+            <!-- <li><a href="https://tmclub.eu/" target="_blank"><i class="fa fa-comments"></i> easySPEAK</a></li> -->
           </ul>
         </div>
         <!-- END TOP BAR MENU -->
