@@ -112,7 +112,16 @@
             <?php 
               $json = file_get_contents('../data/common.json');
               $json_data = json_decode($json, true);
-              print_r($json_data);
+              // print_r($json_data);
+
+              foreach($json_data.LeftTopLink as $ltLink){
+            ?>
+              <li>
+              <a href="<?=$ltLink.Link?>" target="_blank"><i class="<?=$ltLink.class ?>"></i>
+              </a>  
+              </li>
+            <?php
+              }
             ?>
             <!-- <li>
               <a href="https://www.facebook.com/BrnoToastmasters" target="_blank"><i class="fa fa-facebook"></i>
