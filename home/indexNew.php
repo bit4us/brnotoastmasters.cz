@@ -207,7 +207,7 @@ $meetingData = $json_data->MeetingData;
                 <span class="carousel-title-normal">of your own voice</span>
               </h2>
               <p class="carousel-subtitle-v5 border-top-bottom margin-top-30 margin-bottom-30" data-animation="animated fadeInDown">
-                When: Every <?=$meetingData->meetingDay ?>, <?=$json_data->MeetingData->MeetingTime?> <br>Where: <a href="<?=$json_data->MeetingData->MeetingAddressMap?>" target="_blank" rel="noopener noreferrer" style="color: #1B8093; font-weight: bold;"><i class="fa fa-globe"></i> <?=$json_data->MeetingData->MeetingPlaceName?></a></p>
+                When: Every <?=$meetingData->meetingDay ?>, <?=$json_data->meetingData->MeetingTime?> <br>Where: <a href="<?=$json_data->MeetingData->MeetingAddressMap?>" target="_blank" rel="noopener noreferrer" style="color: #1B8093; font-weight: bold;"><i class="fa fa-globe"></i> <?=$json_data->MeetingData->MeetingPlaceName?></a></p>
               <a class="carousel-btn-green" data-animation="animated fadeInUp"
                 href="https://bt.tmclub.eu/profile.php?mode=register&YerThere=true" target="_blank">Join Now!</a>
                 <br><br><br>
