@@ -210,77 +210,24 @@ $home_data = json_decode($homeJSON);
         <?php } ?>
       </div>
       <!-- END SERVICE BOX -->
-      <!-- BEGIN BLOCKQUOTE BLOCK -->   
-      <div class="row quote-v1 margin-bottom-30">
-        <div class="col-md-9">
-          <span>Brno Toastmasters - part of Toastmasters International organization</span>
-        </div>
-        <div class="col-md-3 text-right">
-          <a class="btn-transparent" href="http://toastmasters.org" target="_blank"><i class="fa fa-globe margin-right-10"></i>Toastmasters.org</a>
-        </div>
-      </div>
-      <!-- END BLOCKQUOTE BLOCK -->
-      <!-- BEGIN TABS AND TESTIMONIALS -->
+      <!-- BEGIN TABS -->
       <div class="row mix-block margin-bottom-40">
-        <!-- TABS -->
         <div class="col-md-12 tab-style-1">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab-1" data-toggle="tab" >Break the ice</a></li>
-            <li><a href="#tab-2" data-toggle="tab">Pathways</a></li>
-            <li><a href="#tab-3" data-toggle="tab">Education</a></li>
-            <li><a href="#tab-4" data-toggle="tab">Membership</a></li>
-            <li><a href="#tab-5" data-toggle="tab">Contests</a></li>
+            <?php foreach($home_data->tabs1 as $tab) {?>
+              <li class="<?=$tab->class?>"><a href="#tab-<?=$tab->id?>" data-toggle="tab1" ><?=$tab->title?></a></li>
+            <?php } ?>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane row fade in active" id="tab-1">
-              <div class="col-md-9 col-sm-9">
-                <h2>Sample your first project</h2>
-                <p>Take an exciting peek at the first project on your Toastmasters journey - the Ice Breaker. See how projects are structured in Pathways and experience how clear and simple the objectives are to achieve.</p>
-                <p>The Ice Breaker is your first opportunity to share something about yourself and your goals with other members of your club. You may want to include the following information in your speech to help club members get to know you:</p>
-                <ul>
-                  <li>The reason you joined Toastmasters (if a person or incident influenced you to join, share that story)</li>
-                  <li>Your communication and leadership goals</li>
-                </ul>
-                <p><a class="more" href="https://www.toastmasters.org/websiteApps/Pathways/IceBreaker/tm100101/index.html" target="_blank">Start now</a></p>
+            <?php foreach($home_data->tabs1 as $tab) {?>
+              <div class="tab-pane row fade <?=$tab->class2?>" id="tab-<?=$tab->id?>">
+                <?=$tab->content?>
               </div>
-              <div class="col-md-3 col-sm-3">
-                  <!-- <a href="../assets/pages/video/ice_breaker_final_cut_071216.mp4" class="fancybox-button fancybox.iframe" title="Icebreaker" data-rel="fancybox-button1"> -->
-                    <a href="https://www.youtube.com/embed/nAgeDAjpvqE" class="fancybox-button fancybox.iframe" title="Icebreaker" data-rel="fancybox-button1">
-                    <img class="img-responsive" src="../assets/pages/img/tmi/pathways-icebreaker-image.png" alt="">
-                  </a>
-              </div>
-            </div>
-            <div class="tab-pane row fade" id="tab-2">
-              <div class="col-md-3 col-sm-3">
-                <a href="https://www.youtube.com/embed/iv9cKPn0Wpo?autoplay=1&enablejsapi=1" class="fancybox-button fancybox.iframe" title="Pathways" data-rel="fancybox-button2">
-                  <img class="img-responsive" src="../assets/pages/img/tmi/pathwaysVideo.jpg" alt="">
-                </a>
-              </div>
-              <div class="col-md-9 col-sm-9">
-                <h4>What are pathways?</h4>
-                <p class="margin-bottom-10">Toastmasters Pathways learning experience, an exciting, flexible and interactive way to develop your skills and help others in your club develop theirs. Pathways helps you learn communication and leadership skills that you need to succeed.</p>
-                <p><a class="more" href="https://www.toastmasters.org/pathways-overview" target="_blank">Read more</a></p>
-                <h4>Have you joined us? Are you undecided what Pathway to choose?</h4>
-                <p>Toastmasters pathway selection seems to be complicated for some of us. However, don't get scared. There's a smart tool through which you can assess which pathway would fit you best. So you may choose based on your assessment or whatever you'd like. </p>
-                <p><a class="more" href="https://www.toastmasters.org/start-pathways/select-your-preference?" target="_blank" >Take assessment here</a></p>
-              </div>
-              
-            </div>
-            <div class="tab-pane fade" id="tab-3">
-              <p>Education is an important part of every Toastmaster's journey, and it is a critical aspect of all club meetings around the world. Participating in Toastmasters' education programs allows you to gain the valuable practice needed to develop your public speaking, communication, and leadership skills. The safe and supportive environment clubs provide allows you to learn at your own pace in a curriculum that has helped millions meet their personal and professional goals.</p>
-              <p><a class="more" href="https://www.toastmasters.org/education" target="_blank">Learn more</a></p>
-            </div>
-            <div class="tab-pane fade" id="tab-4">
-              <p>Joining Toastmasters is easy and affordable. When you become a member, you'll have the support of o8ur club, district and the global organization as you work toward your goals. By becoming a  member you're opening a door towards professional public speaking, towards successful leadership and towards a world of fascinating stories, great lessons and fantastic personal growth. </p>
-              <p><a class="more" href="https://www.toastmasters.org/membership/why-toastmasters" target="_blank">Read more</a></p>
-            </div>
-            <div class="tab-pane fade" id="tab-5">
-              <p>Speech contests are a Toastmasters tradition. Each year, thousands of Toastmasters compete in the Humorous, Evaluation, Tall Tales, Table Topics and International speech contests. Competition begins with club contests, and winners continue competing through the Area, Division and District levels. Winners of the District level International Speech Contest proceed to the region quarterfinal level. Following region quarterfinals, winners advance to the semifinals for a chance to take part in the World Championship of Public Speaking®.</p>
-              <p><a class="more" href="https://www.toastmasters.org/leadership-central/speech-contests" target="_blank">Read more</a></p>
-            </div>
+            <?php } ?>
           </div>
-        </div>
-        <!-- END TABS -->
+
+
+        
       </div>                
       <!-- END TABS -->
       <div class="row margin-bottom-40">

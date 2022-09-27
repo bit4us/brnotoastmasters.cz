@@ -41,4 +41,20 @@
         "link_class": "fa fa-globe",
         "link_title":"Toastmasters.org"
     }
+    ,"tabs1": [
+        {
+            "id":1,
+            "class": "active",
+            "class2": "in active",
+            "title": "Break the ice",
+            "content": "<div class='col-md-9 col-sm-9'><h2>Sample your first project</h2><p>Take an exciting peek at the first project on your Toastmasters journey - the Ice Breaker. See how projects are structured in Pathways and experience how clear and simple the objectives are to achieve.</p><p>The Ice Breaker is your first opportunity to share something about yourself and your goals with other members of your club. You may want to include the following information in your speech to help club members get to know you:</p><ul><li>The reason you joined Toastmasters (if a person or incident influenced you to join, share that story)</li><li>Your communication and leadership goals</li></ul><p><a class='more' href='https://www.toastmasters.org/websiteApps/Pathways/IceBreaker/tm100101/index.html' target='_blank'>Start now</a></p></div><div class='col-md-3 col-sm-3'><a href='https://www.youtube.com/embed/nAgeDAjpvqE' class='fancybox-button fancybox.iframe' title='Icebreaker' data-rel='fancybox-button1'><img class='img-responsive' src='../assets/pages/img/tmi/pathways-icebreaker-image.png' alt=''></a></div>"
+        }
+        ,{
+            "id":2,
+            "class": "",
+            "class2": "",
+            "title": "Pathways",
+            "content": "<div class='col-md-3 col-sm-3'><a href='https://www.youtube.com/embed/iv9cKPn0Wpo?autoplay=1&enablejsapi=1' class='fancybox-button fancybox.iframe' title='Pathways' data-rel='fancybox-button2'><img class='img-responsive' src='../assets/pages/img/tmi/pathwaysVideo.jpg' alt=''></a></div><div class='col-md-9 col-sm-9'><h4>What are pathways?</h4><p class='margin-bottom-10'>Toastmasters Pathways learning experience, an exciting, flexible and interactive way to develop your skills and help others in your club develop theirs. Pathways helps you learn communication and leadership skills that you need to succeed.</p><p><a class='more' href='https://www.toastmasters.org/pathways-overview' target='_blank'>Read more</a></p><h4>Have you joined us? Are you undecided what Pathway to choose?</h4><p>Toastmasters pathway selection seems to be complicated for some of us. However, don't get scared. There's a smart tool through which you can assess which pathway would fit you best. So you may choose based on your assessment or whatever you'd like. </p><p><a class='more' href='https://www.toastmasters.org/start-pathways/select-your-preference?' target='_blank' >Take assessment here</a></p></div>"
+        }
+    ]
 }
