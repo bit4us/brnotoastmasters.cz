@@ -239,6 +239,7 @@ $json_data = json_decode($json);
             <li><a href="#tab-2" data-toggle="tab">Pathways</a></li>
             <li><a href="#tab-3" data-toggle="tab">Education</a></li>
             <li><a href="#tab-4" data-toggle="tab">Membership</a></li>
+            <li><a href="#tab-5" data-toggle="tab">Contests</a></li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane row fade in active" id="tab-1">
@@ -282,6 +283,10 @@ $json_data = json_decode($json);
             <div class="tab-pane fade" id="tab-4">
               <p>Joining Toastmasters is easy and affordable. When you become a member, you'll have the support of o8ur club, district and the global organization as you work toward your goals. By becoming a  member you're opening a door towards professional public speaking, towards successful leadership and towards a world of fascinating stories, great lessons and fantastic personal growth. </p>
               <p><a class="more" href="https://www.toastmasters.org/membership/why-toastmasters" target="_blank">Read more</a></p>
+            </div>
+            <div class="tab-pane fade" id="tab-5">
+              <p>Speech contests are a Toastmasters tradition. Each year, thousands of Toastmasters compete in the Humorous, Evaluation, Tall Tales, Table Topics and International speech contests. Competition begins with club contests, and winners continue competing through the Area, Division and District levels. Winners of the District level International Speech Contest proceed to the region quarterfinal level. Following region quarterfinals, winners advance to the semifinals for a chance to take part in the World Championship of Public Speaking®.</p>
+              <p><a class="more" href="https://www.toastmasters.org/leadership-central/speech-contests" target="_blank">Read more</a></p>
             </div>
           </div>
         </div>
