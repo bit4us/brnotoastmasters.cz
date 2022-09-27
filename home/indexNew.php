@@ -148,7 +148,6 @@ $json_data = json_decode($json);
             ?>
             <!-- <li><a href="https://ib.fio.cz/ib/transparent?a=2600101541&l=ENGLISH" target="_blank"
                 class="hidden">FioBanka</a></li> -->
-            <!-- <li><a href="https://tmclub.eu/" target="_blank"><i class="fa fa-comments"></i> easySPEAK</a></li> -->
           </ul>
         </div>
         <!-- END TOP BAR MENU -->
@@ -174,7 +173,6 @@ $json_data = json_decode($json);
           <li><a href="../contests">Contests</a></li>
           <li><a href="../club">Our Club</a></li>
           <li><a href="../faq">FAQ</a></li>
-          <!-- <li><a href="#">Contact</a></li> -->
         </ul>
       </div>
       <!-- END NAVIGATION -->
@@ -208,7 +206,7 @@ $json_data = json_decode($json);
                 <span class="carousel-title-normal">of your own voice</span>
               </h2>
               <p class="carousel-subtitle-v5 border-top-bottom margin-top-30 margin-bottom-30" data-animation="animated fadeInDown">
-                When: Every TUESDAY, 18:30 <br>Where: <a href="https://goo.gl/maps/xWgJSj5b3VChHHsx8" target="_blank" rel="noopener noreferrer" style="color: #1B8093; font-weight: bold;"><i class="fa fa-globe"></i> The Elephant</a></p>
+                When: Every <?=$json_data->MeetingData->MeetingDay?>, <?=$json_data->MeetingData->MeetingTime?> <br>Where: <a href="<?=$json_data->MeetingData->MeetingAddressMap?>" target="_blank" rel="noopener noreferrer" style="color: #1B8093; font-weight: bold;"><i class="fa fa-globe"></i> <?=$json_data->MeetingData->MeetingPlaceName?></a></p>
               <a class="carousel-btn-green" data-animation="animated fadeInUp"
                 href="https://bt.tmclub.eu/profile.php?mode=register&YerThere=true" target="_blank">Join Now!</a>
                 <br><br><br>
@@ -403,12 +401,12 @@ $json_data = json_decode($json);
           <div class="col-md-4 col-sm-6 pre-footer-col">
             <h2>Our Contacts</h2><br/>
             <address class="margin-bottom-40">
-              <b>The Elephant</b><br>
-              Lidická 705/43, 602 00 Brno-střed-Veveří <a href="https://goo.gl/maps/xWgJSj5b3VChHHsx8" target="_blank">(Open in maps)</a><br>
-              We meet every Tuesday at 18:30 (Prague Timezone) <br>
-              Email: <a href="mailto:dan.murphy@consultmurphy.com">dan.murphy@consultmurphy.com</a><br>
+              <b><?=$json_data->MeetingData->meetingPlaceName?></b><br>
+              <?=$json_data->MeetingData->meetingAddress ?> <a href="<?=$json_data->MeetingData->meetingAddressMap ?> target="_blank">(Open in maps)</a><br/>
+              We meet every <?=$json_data->MeetingData->meetingDay?> at <?=$json_data->MeetingData->meetingTime?> <?=$json_data->MeetingData->meetingTime?> <br>
+              Email: <a href="mailto:<?=$json_data->MeetingData->meetingEmailContact?>"><?=$json_data->MeetingData->meetingEmailContact?></a><br>
               <!-- <i class="fa fa-headphones"></i><span> <a href="http://zoom.us/j/299324505?pwd=RVhRQXRrL1ZpV3hNNnBBVlp3aXF1QT09" target="_blank">Zoom online meeting</a></span><br><br> -->
-              <a href="https://www.facebook.com/BrnoToastmasters" target="_blank"><h4><i class="fa fa-facebook"></i> BrnoToastmasters</h4></a> 
+              <a href="<?=$json_data->MeetingData->meetingFacebookPageLink?>" target="_blank"><h4><i class="<?=$json_data->MeetingData->meetingFacebookPageIcon?>"></i> <?=$json_data->MeetingData->meetingFacebookPageTitle?></h4></a> 
             </address>
           </div>
           <!-- END TWITTER BLOCK -->

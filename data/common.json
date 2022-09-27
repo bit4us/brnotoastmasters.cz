@@ -1,4 +1,18 @@
 {
+    "MeetingData": [
+        {
+            "meetingPlaceName":"The Elephant",
+            "meetingAddress":"Lidická 705/43, 602 00 Brno-střed-Veveří",
+            "meetingAddressMap": "https://goo.gl/maps/xWgJSj5b3VChHHsx8",
+            "meetingDay": "Tuesday",
+            "meetingTime": "18:30",
+            "meetingTimeZone": "(Prague Timezone)",
+            "meetingEmailContact": "dan.murphy@consultmurphy.com",
+            "meetingFacebookPageLink": "https://www.facebook.com/BrnoToastmasters",
+            "meetingFacebookPageIcon": "fa fa-facebook",
+            "meetingFacebookPageTitle": "BrnoToastmasters"
+        }
+    ],
     "LeftTopLinks":[
         {
             "Link":"https://www.facebook.com/BrnoToastmasters",
@@ -16,5 +30,6 @@
             "title":"easySpeak"
         }
     ]
+
     
 }
