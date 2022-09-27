@@ -43,7 +43,32 @@
             "title":""
         }
     ],
-    
+    "MainMenu": [
+        {
+            "name":"home",
+            "title":"Home",
+            "href":"../home",
+            "icon":""
+        }
+        ,{
+            "name":"contests",
+            "title":"Contests",
+            "href":"../contests",
+            "icon":""
+        }
+        ,{
+            "name":"club",
+            "title":"Our Club",
+            "href":"../club",
+            "icon":""
+        }
+        ,{
+            "name":"faq",
+            "title":"FAQ",
+            "href":"../faq",
+            "icon":""
+        }
+    ],
 
     "Footer1":
         {

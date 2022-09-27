@@ -10,6 +10,7 @@
 <head>
 
 <?php
+$pagename = "home";
 $json = file_get_contents('../data/common.json');
 $json_data = json_decode($json);
 
@@ -156,11 +157,12 @@ $json_data = json_decode($json);
       <!-- BEGIN NAVIGATION -->
       <div class="header-navigation pull-right font-transform-inherit">
         <ul>
-          <li class="active"><a href="../home">Home</a></li>
-          <!-- <li><a href="#">Events</a></li> -->
-          <li><a href="../contests">Contests</a></li>
-          <li><a href="../club">Our Club</a></li>
-          <li><a href="../faq">FAQ</a></li>
+          <?php 
+            foreach ($json_data->MainMenu as $mainMenu) {
+              
+          ?>
+          <li class="<?=$pagename===$mainMenu->name ? "active" : ""?>"><a href="<?=$mainMenu->href?>"><?=$mainMenu->title?></a></li>
+          <?php } ?>
         </ul>
       </div>
       <!-- END NAVIGATION -->
