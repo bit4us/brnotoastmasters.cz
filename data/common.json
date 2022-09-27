@@ -1,5 +1,5 @@
 {
-    "MeetingData": [
+    "MeetingData": 
         {
             "meetingPlaceName":"The Elephant",
             "meetingAddress":"Lidická 705/43, 602 00 Brno-střed-Veveří",
@@ -11,8 +11,7 @@
             "meetingFacebookPageLink": "https://www.facebook.com/BrnoToastmasters",
             "meetingFacebookPageIcon": "fa fa-facebook",
             "meetingFacebookPageTitle": "BrnoToastmasters"
-        }
-    ],
+        },
     "LeftTopLinks":[
         {
             "Link":"https://www.facebook.com/BrnoToastmasters",
