@@ -383,9 +383,10 @@ $json_data = json_decode($json);
         <div class="row">
           <!-- BEGIN BOTTOM ABOUT BLOCK -->
           <div class="col-md-4 col-sm-6 pre-footer-col padding-top-10">
-            <h2>About us</h2><br/>
-            <p>Brno Toastmasters was established in 2008 by a group of enthusiasts with a passion for communication and personal growth. Since the beginning, the club's meetings offered a supportive atmosphere and valuable feedback to people who wanted to overcome the fear of speaking in public or looked to embark on a new leadership challenge.</p>
-            <p>Our mission is to develop the new leaders of tomorrow</p>
+            <h2><?=$json_data->Footer1->Title ?></h2><br/>
+            <p><?=$json_data->Footer1->Content ?></p>
+            <!-- <p>Brno Toastmasters was established in 2008 by a group of enthusiasts with a passion for communication and personal growth. Since the beginning, the club's meetings offered a supportive atmosphere and valuable feedback to people who wanted to overcome the fear of speaking in public or looked to embark on a new leadership challenge.</p>
+            <p>Our mission is to develop the new leaders of tomorrow</p> -->
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
 
@@ -406,7 +407,7 @@ $json_data = json_decode($json);
               We meet every <?=$json_data->MeetingData->meetingDay?> at <?=$json_data->MeetingData->meetingTime?> <?=$json_data->MeetingData->meetingTimeZone?> <br>
               Email: <a href="mailto:<?=$json_data->MeetingData->meetingEmailContact?>"><?=$json_data->MeetingData->meetingEmailContact?></a><br>
               <!-- <i class="fa fa-headphones"></i><span> <a href="http://zoom.us/j/299324505?pwd=RVhRQXRrL1ZpV3hNNnBBVlp3aXF1QT09" target="_blank">Zoom online meeting</a></span><br><br> -->
-              <a href="<?=$json_data->MeetingData->meetingFacebookPageLink?>" target="_blank"><h4><i class="<?=$json_data->MeetingData->meetingFacebookPageIcon?>"></i> <?=$json_data->MeetingData->meetingFacebookPageTitle?></h4></a> 
+              <a href="<?=$json_data->MeetingData->meetingFacebookPageLink?>" target="_blank"><i class="<?=$json_data->MeetingData->meetingFacebookPageIcon?>"></i> <?=$json_data->MeetingData->meetingFacebookPageTitle?></a> 
             </address>
           </div>
           <!-- END TWITTER BLOCK -->

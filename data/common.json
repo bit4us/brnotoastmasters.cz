@@ -28,7 +28,12 @@
             "class":"fa fa-comments",
             "title":"easySpeak"
         }
+    ],
+    "Footer1":[
+        {
+            "Title":"About us",
+            "Content": "Brno Toastmasters was established in 2008 by a group of enthusiasts with a passion for communication and personal growth. Since the beginning, the club's meetings offered a supportive atmosphere and valuable feedback to people who wanted to overcome the fear of speaking in public or looked to embark on a new leadership challenge. <br/>Our mission is to develop the new leaders of tomorrow"
+        }
     ]
-
     
 }
