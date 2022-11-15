@@ -231,8 +231,8 @@ $home_data = json_decode($homeJSON);
       <div class="row margin-bottom-40">
         <div class="tab-content" style="padding:0;">
           <!-- START TAB 1 -->
-          <div class="tab-pane active" id="tab_1">
-             <div class="panel-group" id="accordion1">
+          <div class="tab-pane active" id="membership_1">
+             <div class="panel-group" id="membership">
                 <div class="panel panel-success">
                    <div class="panel-heading">
                       <h4 class="panel-title">
@@ -241,7 +241,7 @@ $home_data = json_decode($homeJSON);
                          <!-- </a> -->
                       </h4>
                    </div>
-                   <div class="panel-collapse collapse in" id="accordion1_1">
+                   <div class="panel-collapse collapse in" id="membership_1">
                       <div class="panel-body">
                         <p>
                             Payments for membership are to be made via bank transfer to account <b>2600101541 / 2010</b> (FIO BANKA). <br/>
@@ -537,7 +537,7 @@ $home_data = json_decode($homeJSON);
         </div>
         <!-- END CONTENT -->
       </div>
-      
+
     </div>
     <!-- BEGIN PRE-FOOTER -->
     <div class="pre-footer" style="margin-top: auto;">
