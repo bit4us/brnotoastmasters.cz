@@ -45,16 +45,7 @@
     ],
     "MainMenu": [
         {
-            "name":"home",
-            "title":"Home",
-            "href":"../home",
-            "icon":""
-        }
-        ,{
-            "name":"faq",
-            "title":"FAQ",
-            "href":"../faq",
-            "icon":""
+            
         }
     ],
 

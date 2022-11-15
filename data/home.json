@@ -91,5 +91,15 @@
             "title": "Club Officer Training materials",
             "content": "<p>Club officers are best served by consistent, professional, and engaging training that supports the brand, enhances member experience, and helps them grow as leaders. The materials provided by Toastmasters International are the standard of quality and consistency that should make up the core of District-sponsored Club Officer Training.</p><h4>NEW SESSION MATERIAL</h4><p>Training should be time well spent for everyone. Make the most of your training time with ready-to-use training sessions that follows a well-structured format and delivers engaging training to club officers. Logically structured guides help facilitators lead sessions that promote vital learning points to club officers and save hours in research and development.</p><p><a class='more' href='https://www.toastmasters.org/leadership-central/district-leader-tools/training/club-officer-training-materials' target='_blank'>Read more</a></p>"
         }
+    ],"faq": 
+    [
+        {
+            "id": "1",
+            "title":"Brno Toastmasters - part of Toastmasters International organization",
+            "href":"http://toastmasters.org",
+            "target":"_blank",
+            "link_class": "fa fa-globe",
+            "link_title":"Toastmasters.org"
+        }
     ]
 }
