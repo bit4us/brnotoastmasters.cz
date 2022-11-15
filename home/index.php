@@ -236,12 +236,10 @@ $home_data = json_decode($homeJSON);
                 <div class="panel panel-success">
                    <div class="panel-heading">
                       <h4 class="panel-title">
-                         <!-- <a href="#accordion1_1" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle"> -->
-                           Membership payment
-                         <!-- </a> -->
+                         Membership payment
                       </h4>
                    </div>
-                   <div class="panel-collapse collapse in" id="membership_1">
+                   <div class="panel-collapse collapse in" id="membership-1">
                       <div class="panel-body">
                         <p>
                             Payments for membership are to be made via bank transfer to account <b>2600101541 / 2010</b> (FIO BANKA). <br/>
