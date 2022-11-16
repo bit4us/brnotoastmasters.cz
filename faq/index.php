@@ -317,23 +317,23 @@ $home_data = json_decode($homeJSON);
                     <!-- END TAB 1 -->
                     <!-- START Programmed TABs -->
                     <?php
-                      foreach ($home_data->faq as $faq){
+                      foreach ($home_data->faq as $new_faq){
 
                     ?>
-                    <div class="tab-pane" id="tab_<?=$faq->id?>">
-                        <div class="panel-group" id="accordion<?=$faq->id?>">
+                    <div class="tab-pane" id="tab_<?=$new_faq->id?>">
+                        <div class="panel-group" id="accordion<?=$new_faq->id?>">
                           <?php
-                            foreach($faq->content as $content){
+                            foreach($new_faq->content as $content){
                           ?>
                             <div class="panel panel-<?=$content->panelClass?>">
                               <div class="panel-heading">
                                 <h4 class="pannel-title">
-                                  <a href="#accordion<?=$faq->id?>_<?=$content->id?>" data-parent="#accordion<?=$faq->id?>" data-toggle="collapse" class="accordion-toggle">
+                                  <a href="#accordion<?=$new_faq->id?>_<?=$content->id?>" data-parent="#accordion<?=$new_faq->id?>" data-toggle="collapse" class="accordion-toggle">
                                     <?=$content->question?>
                                   </a>
                                 </h4>
                               </div>
-                              <div class="panel-collapse collapse in" id="accordion<?=$faq->id?>_<?=$content->id?>">
+                              <div class="panel-collapse collapse in" id="accordion<?=$new_faq->id?>_<?=$content->id?>">
                                 <div class="panel-body">
                                   <?=$content->answer?>
                                 </div>
