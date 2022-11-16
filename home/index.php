@@ -434,7 +434,7 @@ $home_data = json_decode($homeJSON);
                              <div class="panel-heading">
                                 <h4 class="panel-title">
                                    <a href="#accordion2_2" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                                   2. What are the benefits of being a member?
+                                   2. What are the benefits of being a member ?
                                    </a>
                                 </h4>
                              </div>

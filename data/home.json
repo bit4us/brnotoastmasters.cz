@@ -162,6 +162,14 @@
                 "panelClass":"default",
                 "question": "1. How to become a member ?",
                 "answer": "<p>As a guest you can attend our meetings for free as long as you like, but you'll be always limited to participate only in table topics speeches. In order to completely benefit from what Toastmasters offers, you need to become a member.</p><p>To become a member, the best practice is to discuss it with the Vice President for Membership of the club and arrange for the first time membership payment.</p>"
+            },
+            {
+              "id":2,
+              "active":"",
+              "in":"",
+              "panelClass":"default",
+              "question":"2. What are the benefits of being a member ?",
+              "answer":"<p>The Toastmasters family is larger than our club. So, as a member, besides the club benefits, you also get access to a world wide community where you can access and participate in more activities than just the club level ones.</p><h4>Club Benefits</h4><ul><li>Full access to Pathways and Prepared speeches</li><li>Any meeting role during any meeting</li><li>Participate in club and international contests for best Speech, best Humorous speech, best Table Topics speech or best Evaluator (based on each level, winners advance towards the international contests)</li><li>Eligibility to candidate and become a club officer</li><li>Eligibility to organize Workshops and other events including the regular meetings</li></ul><h4>Toastmasters International benefits</h4><ul><li>Access to pathways</li><li>Eligibility to participate to and / or organize local or international meetings</li><li>Eligibility to candidate for different levels of management in the entire organization</li></ul>"
             }
             ]
         },
@@ -178,6 +186,22 @@
                 "panelClass":"default",
                 "question": "1. How much does it cost to be a member ?",
                 "answer": "<p>Registration and membership fee for a <b>new member</b> in our club is <b>1500 CZK</b> for the first 6 months. However, depending on the month of registration, this amount is being recalculated for the remaining time until the next continuation for the membership is, reason why the amount should be discussed with the Treasurer and the Vice President for Membership. The fee will cover your registration in Toastmasters International which will provide with educational manuals and first pathway.</p><p>Membership fee continuation for an <b>existing member</b> is <b>1000 CZK</b>.</p>"
+            },
+            {
+              "id":2,
+              "active":"",
+              "in":"",
+              "panelClass":"default",
+              "question":"2. Which months of the year should members pay continuation fee ?",
+              "answer":"<p>For continuation of membership, each member has to pay the fee of 1000 CZK every March and September of the year.</p>"
+            },
+            {
+              "id":3,
+              "active":"",
+              "in":"",
+              "panelClass":"default",
+              "question":"3. How do I pay?",
+              "answer":"<p>Payments for membership are to be made via bank transfer to account <b>2600101541 / 2010</b> (FIO BANKA). <br/>Regular payments are made every March and September of the year. For new members who want to join in between those regular payments should contact the Treasurer and the Vice President for Membership of the club to calculate the correct amount to be paid based on the time left until next regular payment schedule.</p><p>Pay membership via QR Code: </p><div class='row'><div class='col-md-6'><h3>New Membership</h3>(you have to type the amount after discussing with our officers) <br><img src='../assets/pages/img/faq/newqrcode.png' alt='New Membership QR Code'></div><div class='col-md-6' style='text-align: right;'><h3>Renewal Membership</h3>(amount for renewal is already predefined) <br><img src='../assets/pages/img/faq/renewalqrcode.png/' alt='Renewal Membership QR Code'></div></div>"
             }
             ]
         }
