@@ -97,6 +97,7 @@
         "id":1,
         "title":"General Questions",
         "icon": "",
+        "active":"active",
         "content": [
             {
                 "question": "1. What is Brno Toastmasters ?",

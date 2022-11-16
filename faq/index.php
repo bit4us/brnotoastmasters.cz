@@ -13,7 +13,8 @@
 $pagename = "faq";
 $json = file_get_contents('../data/common.json');
 $json_data = json_decode($json);
-
+$homeJSON = file_get_contents('../data/home.json');
+$home_data = json_decode($homeJSON);
 ?>
 
 
@@ -172,6 +173,27 @@ $json_data = json_decode($json);
   <div class="main">
     <div class="container">
       <div class="row margin-bottom-40">
+         <div class="col-md-12 col-sm-12">
+            <h1>Frequently Asked Questions</h1>
+            <div class="content-page">
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+                <ul class="tabbable faq-tabbable">
+                  <?php 
+                     foreach ($home_data->faq as $faq) {
+                  ?>
+                  <li class="<?=$faq->active?>"><a href="#tab_<?=$faq->id?>" data-toggle="tab"><?=$faq->icon?> <?=$faq->title?></a></li>               <?php
+                     }
+                  ?>
+                </ul>
+               </div>
+               <div class="col-md-9 col-sm-9">
+
+               </div>
+         </div>
+
+
+
         <!-- BEGIN CONTENT -->
         <div class="col-md-12 col-sm-12">
           <h1>Frequently Asked Questions</h1>
