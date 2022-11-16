@@ -172,10 +172,10 @@ $home_data = json_decode($homeJSON);
   <!-- END SLIDER -->
   <div class="main">
     <div class="container">
-      <div class="row margin-bottom-40">
-         <div class="col-md-12 col-sm-12">
-            <h1>Frequently Asked Questions</h1>
-            <div class="content-page">
+        <!-- BEGIN CONTENT -->
+        <div class="col-md-12 col-sm-12">
+          <h1>Frequently Asked Questions</h1>
+          <div class="content-page">
             <div class="row">
               <div class="col-md-3 col-sm-3">
                 <ul class="tabbable faq-tabbable">
@@ -185,27 +185,6 @@ $home_data = json_decode($homeJSON);
                   <li class="<?=$faq->active?>"><a href="#tab_<?=$faq->id?>" data-toggle="tab"><?=$faq->icon?> <?=$faq->title?></a></li>               <?php
                      }
                   ?>
-                </ul>
-               </div>
-               <div class="col-md-9 col-sm-9">
-
-               </div>
-            </div>
-         </div>
-      </div>
-
-
-
-        <!-- BEGIN CONTENT -->
-        <div class="col-md-12 col-sm-12">
-          <h1>Frequently Asked Questions</h1>
-          <div class="content-page">
-            <div class="row">
-              <div class="col-md-3 col-sm-3">
-                <ul class="tabbable faq-tabbable">
-                  <li class="active"><a href="#tab_1" data-toggle="tab">General Questions</a></li>
-                  <li><a href="#tab_2" data-toggle="tab">Membership</a></li>
-                  <li><a href="#tab_3" data-toggle="tab">Payment</a></li>
                 </ul>
               </div>
               <div class="col-md-9 col-sm-9">
