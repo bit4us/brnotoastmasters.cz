@@ -97,27 +97,32 @@
         "id":1,
         "title":"General Questions",
         "icon": "",
+        "active": "active",
         "content": [
             {
                 "id":1,
+                "active":"in",
                 "panelClass":"default",
                 "question": "1. What is Brno Toastmasters ?",
                 "answer": "<p>Brno Toastmasters club is the place where people meet each week to obtain and improve our public speaking and leadership skills in a friendly and supportive environment in English language.<br>We are the only public Toastmasters club in Brno in English language.</p><p>We are part of an international organization called Toastmasters International (see their website <a href='https://toastmasters.org' target='_blank'>here</a>).</p>"
             },
             {
                 "id":2,
+                "active":"",
                 "panelClass":"default",
                 "question": "2. How does a meeting look like ?",
                 "answer": "<p>Our meetings have a predefined agenda. A typical agenda looks like this:<ul><li>A member with the role of toastmaster of the evening starts the meeting. He / she presents the meeting theme, then asks a question for everyone attending in order to introduce themselves and answer to the question</li><li>The Toastmaster of the day presents the respective meeting agenda</li><li>The timekeeper assigned person presents the timekeeping rules</li><li>Any other meeting roles (grammarian, word of the day, joke of the day or others) are presenting their roles if they are being assigned</li><li>The prepared speeches are being introduced (members are presenting their prepared speeches - usually 5-7 minutes per speech). If there is more than one speech, the speakers are competing for best speech of the day</li><li>Table Topics (impromptu) speeches - Anyone can and is encouraged to join this session where they will be adressed a question to which they have to build a short (1-2 minutes) speech as an answer. The Table Topics Speakers are competing for the best Table Topic speaker contest <br>Depending on how much time the prepared speeches have been alocated, this section can be in the first or second part of the meeting (before or after the break)</li><li>10 minutes BREAK - it's the time when we try to refresh ourselves, and we have a chance for a bit of socializing</li><li>The prepared speakers are being evaluated. For each speach it's assigned a member to evaluate the respective speech.</li><li>The table Topics session is being evaluated (A member of the club is assigned to evaluate the entire table topics session - The Table Topics Master and the Table topics contestants)</li><li>If there are any other Evaluators (General evaluator or others) assigned, are presenting their evaluations and all of them are competing for the Best evaluator title</li><li>The timekeeper presents the repport of the day (for example who exceeded the maximum alocated time for the speech or evaluation)</li><li>The Toastmaster of the day asks or presents the Club Business topics and announces the evening awards after which the meeting is concluded</li></ul>Our meeting is attended by members and guests. It runs for approximately 1-2 hours. There are prepared speeches on different topics presented by members, table topics (impromptu speeches) for 1-2 minutes to which members and guests are invited to participate and, of course, evaluations (feedback) for all speeches and roles.</p>"
             },
             {
                 "id":3,
+                "active":"",
                 "panelClass":"default",
                 "question": "3. Who can join the Brno Toastmasters meeting ?",
                 "answer": "<p>Brno Toastmasters club is the place where people meet each week to obtain and improve our public speaking and leadership skills in a friendly and supportive environment in English language.<br>We are the only public Toastmasters club in Brno in English language.</p><p>We are part of an international organization called Toastmasters International (see their website <a href='https://toastmasters.org' target='_blank'>here</a>).</p>"
             },
             {
                 "id":4,
+                "active":"",
                 "panelClass":"default",
                 "question":"4. Am I expected to speak as a first time guest ?",
                 "answer":"<p>We are expecting to get all introducing ourselves at the beginning of the meeting so we can know each other at least a little bit. We also encourage you that at the end of the meeting to tell us your sincere opinion about your first experience in our club. But we won't be forcing you into speaking in the Table Topics if you don't feel comfortable from the first day.</p>"
@@ -128,6 +133,7 @@
             "id":2,
             "title":"Membership",
             "icon": "",
+            "active": "",
             "content": [
                 
             ]
@@ -136,6 +142,7 @@
             "id":3,
             "title":"Payment",
             "icon": "",
+            "active": "",
             "content": [
                 
             ]
