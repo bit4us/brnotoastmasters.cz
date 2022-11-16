@@ -159,7 +159,7 @@
                 "id":1,
                 "active":"active",
                 "in":"in",
-                "panelClass":"default",
+                "panelClass":"warning",
                 "question": "1. How to become a member ?",
                 "answer": "<p>As a guest you can attend our meetings for free as long as you like, but you'll be always limited to participate only in table topics speeches. In order to completely benefit from what Toastmasters offers, you need to become a member.</p><p>To become a member, the best practice is to discuss it with the Vice President for Membership of the club and arrange for the first time membership payment.</p>"
             },
@@ -183,7 +183,7 @@
                 "id":1,
                 "active":"active",
                 "in":"in",
-                "panelClass":"default",
+                "panelClass":"danger",
                 "question": "1. How much does it cost to be a member ?",
                 "answer": "<p>Registration and membership fee for a <b>new member</b> in our club is <b>1500 CZK</b> for the first 6 months. However, depending on the month of registration, this amount is being recalculated for the remaining time until the next continuation for the membership is, reason why the amount should be discussed with the Treasurer and the Vice President for Membership. The fee will cover your registration in Toastmasters International which will provide with educational manuals and first pathway.</p><p>Membership fee continuation for an <b>existing member</b> is <b>1000 CZK</b>.</p>"
             },
@@ -191,7 +191,7 @@
               "id":2,
               "active":"",
               "in":"",
-              "panelClass":"default",
+              "panelClass":"success",
               "question":"2. Which months of the year should members pay continuation fee ?",
               "answer":"<p>For continuation of membership, each member has to pay the fee of 1000 CZK every March and September of the year.</p>"
             },

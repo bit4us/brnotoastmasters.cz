@@ -275,259 +275,48 @@ $home_data = json_decode($homeJSON);
             <div class="row">
               <div class="col-md-3 col-sm-3">
                 <ul class="tabbable faq-tabbable">
-                  <li class="active"><a href="#tab_1" data-toggle="tab">General Questions</a></li>
-                  <li><a href="#tab_2" data-toggle="tab">Membership</a></li>
-                  <li><a href="#tab_3" data-toggle="tab">Payment</a></li>
+                  <?php 
+                     foreach ($home_data->faq as $faq) {
+                  ?>
+                  <li class="<?=$faq->active?>"><a href="#tab_<?=$faq->id?>" data-toggle="tab"><?=$faq->icon?> <?=$faq->title?></a></li>               <?php
+                     }
+                  ?>
                 </ul>
               </div>
               <div class="col-md-9 col-sm-9">
                   <div class="tab-content" style="padding:0; background: #fff;">
-                    <!-- START TAB 1 -->
-                    <div class="tab-pane active" id="tab_1">
-                       <div class="panel-group" id="accordion1">
-                          <div class="panel panel-success">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion1_1" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
-                                     1. What is Brno Toastmasters ?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse in" id="accordion1_1">
-                                <div class="panel-body">
-                                  <p>
-                                     Brno Toastmasters club is the place where people meet each week to obtain and improve our public speaking and leadership skills in a friendly and supportive environment in English language.<br>
-                                     We are the only public Toastmasters club in Brno in English language.
-                                  </p>
-                                  <p>We are part of an international organization called Toastmasters International (see their website <a href="https://toastmasters.org" target="_blank">here</a>).</p>
-                                </div>
-                             </div>
+                    <?php
+                      foreach ($home_data->faq as $new_faq){
+                    ?>
+                    <!-- START TAB <?=$new_faq->id?> -->
+                    <div class="tab-pane <?=$new_faq->active?>" id="tab_<?=$new_faq->id?>">
+                      <div class="panel-group" id="accordion<?=$new_faq->id?>">
+                        <?php
+                          foreach($new_faq->content as $content){
+                        ?>
+                          <div class="panel panel-<?=$content->panelClass?>">
+                            <div class="panel-heading">
+                              <h4 class="pannel-title">
+                                <a href="#accordion<?=$new_faq->id?>_<?=$content->id?>" data-parent="#accordion<?=$new_faq->id?>" data-toggle="collapse" class="accordion-toggle">
+                                  <?=$content->question?>
+                                </a>
+                              </h4>
+                            </div>
+                            <div class="panel-collapse collapse <?=$content->in?>" id="accordion<?=$new_faq->id?>_<?=$content->id?>">
+                              <div class="panel-body">
+                                <?=$content->answer?>
+                              </div>
+                            </div>
                           </div>
-                          <div class="panel panel-default">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion1_2" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed">
-                                     2. How does a meeting look like ?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion1_2">
-                                <div class="panel-body">
-                                   <p>
-                                     Our meetings have a predefined agenda. A typical agenda looks like this:
-                                     <ul>
-                                        <li>A member with the role of toastmaster of the evening starts the meeting. He / she presents the meeting theme, then asks a question for everyone attending in order to introduce themselves and answer to the question</li>
-                                        <li>The Toastmaster of the day presents the respective meeting agenda</li>
-                                        <li>The timekeeper assigned person presents the timekeeping rules</li>
-                                        <li>Any other meeting roles (grammarian, word of the day, joke of the day or others) are presenting their roles if they are being assigned</li>
-                                        <li>The prepared speeches are being introduced (members are presenting their prepared speeches - usually 5-7 minutes per speech). If there is more than one speech, the speakers are competing for best speech of the day</li>
-                                        <li>
-                                           Table Topics (impromptu) speeches - Anyone can and is encouraged to join this session where they will be adressed a question to which they have to build a short (1-2 minutes) speech as an answer. The Table Topics Speakers are competing for the best Table Topic speaker contest <br>
-                                           Depending on how much time the prepared speeches have been alocated, this section can be in the first or second part of the meeting (before or after the break)
-                                        </li>
-                                        <li>10 minutes BREAK - it's the time when we try to refresh ourselves, and we have a chance for a bit of socializing</li>
-                                        <li>The prepared speakers are being evaluated. For each speach it's assigned a member to evaluate the respective speech.</li>
-                                        <li>The table Topics session is being evaluated (A member of the club is assigned to evaluate the entire table topics session - The Table Topics Master and the Table topics contestants)</li>
-                                        <li>If there are any other Evaluators (General evaluator or others) assigned, are presenting their evaluations and all of them are competing for the Best evaluator title</li>
-                                        <li>The timekeeper presents the repport of the day (for example who exceeded the maximum alocated time for the speech or evaluation)</li>
-                                        <li>The Toastmaster of the day asks or presents the Club Business topics and announces the evening awards after which the meeting is concluded</li>
-                                     </ul> 
-                                     Our meeting is attended by members and guests. It runs for approximately 1-2 hours. There are prepared speeches on different topics presented by members, table topics (impromptu speeches) for 1-2 minutes to which members and guests are invited to participate and, of course, evaluations (feedback) for all speeches and roles.
-                                   </p>
-                                </div>
-                             </div>
-                          </div>
-                          <div class="panel panel-default">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion1_3" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed">
-                                   3. Who can join the Brno Toastmasters meeting? 
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion1_3">
-                                <div class="panel-body">
-                                   <p>
-                                      ANYBODY! The club doors are opened for absolutely anyone who is at least curious about what this club can offer. 
-                                   </p>
-                                </div>
-                             </div>
-                          </div>
-                          <div class="panel panel-default">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion1_4" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed">
-                                   4. Am I expected to speak as a first time guest?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion1_4">
-                                <div class="panel-body">
-                                   <p>
-                                   We are expecting to get all introducing ourselves at the beginning of the meeting so we can know each other at least a little bit. We also encourage you that at the end of the meeting to tell us your sincere opinion about your first experience in our club. But we won't be forcing you into speaking in the Table Topics if you don't feel comfortable from the first day.
-                                  </p>
-                                </div>
-                             </div>
-                          </div>
-                          <div class="panel panel-default">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion1_5" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed">
-                                   5. What should I prepare for the meeting?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion1_5">
-                                <div class="panel-body">
-                                   <p>
-                                      In order to join our meeting you must be prepared with the following items:
-                                   </p>
-                                   <ul>
-                                       <li>EXPECTED: yourself</li>
-                                       <li>PREFERABLY: with enthusiasm</li>
-                                       <li>MANDATORY: bring your smile with you</li>
-                                  </ul>
-                                  <p>We would like to ask you politely to arrive 10-15 minutes before the meeting starting in order to get ready for the meeting and respect the agenda schedule</p>
-                                </div>
-                             </div>
-                          </div>
-                          <div class="panel panel-default">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion1_6" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed">
-                                   6. Can I bring someone with me?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion1_6">
-                                <div class="panel-body">
-                                  OF COURSE! We welcome anyone and everyone. You can bring as many friends you'd like. If you can, bring the entire group of your friends.
-                                </div>
-                             </div>
-                          </div>
-                       </div>
+                        <?php
+                          }
+                        ?>
+                      </div>
                     </div>
-                    <!-- END TAB 1 -->
-                    <!-- START TAB 2 -->
-                    <div class="tab-pane" id="tab_2">
-                       <div class="panel-group" id="accordion2">
-                          <div class="panel panel-warning">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion2_1" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                                   1. How to become a member?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse  in" id="accordion2_1">
-                                <div class="panel-body">
-                                   <p>
-                                      As a guest you can attend our meetings for free as long as you like, but you'll be always limited to participate only in table topics speeches. In order to completely benefit from what Toastmasters offers, you need to become a member. 
-                                   </p>
-                                   <p>
-                                      To become a member, the best practice is to discuss it with the Vice President for Membership of the club and arrange for the first time membership payment.
-                                   </p>
-                                </div>
-                             </div>
-                          </div>
-                          <div class="panel panel-default">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion2_2" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                                   2. What are the benefits of being a member ?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion2_2">
-                                <div class="panel-body">
-                                   <p>The Toastmasters family is larger than our club. So, as a member, besides the club benefits, you also get access to a world wide community where you can access and participate in more activities than just the club level ones.</p>
-                                   <h4>Club Benefits</h4>
-                                   <ul>
-                                      <li>Full access to Pathways and Prepared speeches</li>
-                                      <li>Any meeting role during any meeting</li>
-                                      <li>Participate in club and international contests for best Speech, best Humorous speech, best Table Topics speech or best Evaluator (based on each level, winners advance towards the international contests)</li>
-                                      <li>Eligibility to candidate and become a club officer</li>
-                                      <li>Eligibility to organize Workshops and other events including the regular meetings</li>
-                                   </ul>
-                                   <h4>Toastmasters International benefits</h4>
-                                   <ul>
-                                      <li>Access to pathways</li>
-                                      <li>Eligibility to participate to and / or organize local or international meetings</li>
-                                      <li>Eligibility to candidate for different levels of management in the entire organization</li>
-                                   </ul>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                    <!-- END TAB 3 -->
-                    <!-- START TAB 3 -->
-                    <div class="tab-pane" id="tab_3">
-                       <div class="panel-group" id="accordion3">
-                          <div class="panel panel-danger">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion3_1" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
-                                   1. How much does it cost to be a member ?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse  in" id="accordion3_1">
-                                <div class="panel-body">
-                                   <p>
-                                     Registration and membership fee for a <b>new member</b> in our club is <b>1500 CZK</b> for the first 6 months. However, depending on the month of registration, this amount is being recalculated for the remaining time until the next continuation for the membership is, reason why the amount should be discussed with the Treasurer and the Vice President for Membership. The fee will cover your registration in Toastmasters International which will provide with educational manuals and first pathway.
-                                   </p>
-                                   <p>Membership fee continuation for an <b>existing member</b> is <b>1000 CZK</b>.</p>
-                                </div>
-                             </div>
-                          </div>
-                          <div class="panel panel-success">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion3_2" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
-                                   2. Which months of the year should members pay continuation fee?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion3_2">
-                                <div class="panel-body">
-                                   For continuation of membership, each member has to pay the fee of 1000 CZK every March and September of the year.
-                                </div>
-                             </div>
-                          </div>
-                          <div class="panel panel-default">
-                             <div class="panel-heading">
-                                <h4 class="panel-title">
-                                   <a href="#accordion3_3" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle">
-                                   3. How do I pay?
-                                   </a>
-                                </h4>
-                             </div>
-                             <div class="panel-collapse collapse" id="accordion3_3">
-                                <div class="panel-body">
-                                   <p>
-                                     Payments for membership are to be made via bank transfer to account <b>2600101541 / 2010</b> (FIO BANKA). <br/>
-                                     Regular payments are made every March and September of the year. For new members who want to join in between those regular payments should contact the Treasurer and the Vice President for Membership of the club to calculate the correct amount to be paid based on the time left until next regular payment schedule.
-                                  </p>
-                                  <p>Pay membership via QR Code: </p>
-                                  <div class="row">
-                                     <div class="col-md-6">
-                                        <h3>New Membership</h3>
-                                        (you have to type the amount after discussing with our officers) <br>
-                                        <img src="../assets/pages/img/faq/newqrcode.png" alt="New Membership QR Code">
-                                     </div>
-                                     <div class="col-md-6" style="text-align: right;">
-                                        <h3>Renewal Membership</h3>
-                                        (amount for renewal is already predefined) <br>
-                                        <img src="../assets/pages/img/faq/renewalqrcode.png" alt="Renewal Membership QR Code">
-                                     </div>
-                                  </div>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                    <!-- END TAB 3 -->
+                    <!-- END TAB <?=$new_faq->id?> -->
+                    <?php
+                      }
+                    ?>
                   </div>
               </div>
             </div>
