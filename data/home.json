@@ -103,7 +103,7 @@
                 "id":1,
                 "active":"active",
                 "in":"in",
-                "panelClass":"default",
+                "panelClass":"success",
                 "question": "1. What is Brno Toastmasters ?",
                 "answer": "<p>Brno Toastmasters club is the place where people meet each week to obtain and improve our public speaking and leadership skills in a friendly and supportive environment in English language.<br>We are the only public Toastmasters club in Brno in English language.</p><p>We are part of an international organization called Toastmasters International (see their website <a href='https://toastmasters.org' target='_blank'>here</a>).</p>"
             },
@@ -130,7 +130,23 @@
                 "panelClass":"default",
                 "question":"4. Am I expected to speak as a first time guest ?",
                 "answer":"<p>We are expecting to get all introducing ourselves at the beginning of the meeting so we can know each other at least a little bit. We also encourage you that at the end of the meeting to tell us your sincere opinion about your first experience in our club. But we won't be forcing you into speaking in the Table Topics if you don't feel comfortable from the first day.</p>"
-            }
+            },
+            {
+              "id":5,
+              "active":"",
+              "in":"",
+              "panelClass":"default",
+              "question":"5. What should I prepare for the meeting ?",
+              "answer":"<p>In order to join our meeting you must be prepared with the following items:</p><ul><li>EXPECTED: yourself</li><li>PREFERABLY: with enthusiasm</li><li>MANDATORY: bring your smile with you</li></ul><p>We would like to ask you politely to arrive 10-15 minutes before the meeting starting in order to get ready for the meeting and respect the agenda schedule</p>"
+          },
+          {
+            "id":6,
+            "active":"",
+            "in":"",
+            "panelClass":"default",
+            "question":"6. Can I bring someone with me ?",
+            "answer":"<p>OF COURSE! We welcome anyone and everyone. You can bring as many friends you'd like. If you can, bring the entire group of your friends.</p>"
+        }
         ]
         },
         {
