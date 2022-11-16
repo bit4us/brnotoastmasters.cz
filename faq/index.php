@@ -343,14 +343,14 @@ $home_data = json_decode($homeJSON);
                           ?>
                           </div>
                         </div>
-                    </div>
+                    
                     <?php
                       }
                     ?>
                     <!-- END Programmed TABs -->
 
                     <!-- START TAB 2 -->
-                    <!-- <div class="tab-pane" id="tab_2">
+                    <div class="tab-pane" id="tab_2">
                        <div class="panel-group" id="accordion2">
                           <div class="panel panel-warning">
                              <div class="panel-heading">
@@ -400,7 +400,7 @@ $home_data = json_decode($homeJSON);
                              </div>
                           </div>
                        </div>
-                    </div> -->
+                    </div>
                     <!-- END TAB 3 -->
                     <!-- START TAB 3 -->
                     <!-- <div class="tab-pane" id="tab_3">
